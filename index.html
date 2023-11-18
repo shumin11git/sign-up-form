@@ -5,8 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+    <script src="./script.js" defer></script>
 </head>
 <body>
-    
+    <aside>
+        <img src="./image.jpg">
+        <div id="logo">
+            <h1>Comp & co.</h1>
+        </div>
+    </aside>
+    <main>
+        <section>
+            <p id="description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid nulla maxime, natus, asperiores porro quod fugit reiciendis odio excepturi assumenda minus cupiditate. Sequi tenetur, pariatur iure sapiente harum excepturi cum?
+            </p>
+        </section>
+        <form method="post">
+            <h2>
+                Fill this out!
+            </h2>
+            <label for="first-name">FIRST NAME*
+                <input type="text" id="first-name" name="first-name" required>
+            </label>
+            <label for="last-name">LAST NAME*
+                <input type="text" id="last-name" name="last-name" required>
+            </label>
+            <label for="email">EMAIL*
+                <input type="email" id="email" name="email" required>
+            </label>
+            <label for="phone-number">PHONE NUMBER
+                <input type="tel" id="phone-number" name="phone-number">
+            </label>
+            <label for="password">PASSWORD*
+                <input type="password" id="password" name="password" required minlength="8" placeholder="8 characters min.">
+            </label>
+            <label for="confirm-password">CONFIRM PASSWORD*
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </label>
+        </form>
+        <section>
+            <button type="submit">Create Account</button>
+            <p id="log-in">Already have an account? <a href="">Log in</a></p>
+        </section>
+    </main>
 </body>
 </html>

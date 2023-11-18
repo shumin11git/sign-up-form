@@ -1,0 +1,145 @@
+html * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font-weight: bold;
+}
+
+html, body, img {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+aside {
+    flex: 1 1 40%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    background-color: yellowgreen;
+    object-fit: cover;
+}
+
+#logo {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Dancing Script';
+
+    background-color: rgba(0,0,0,0.3);
+}
+
+main {
+    flex: 2 1 60%;
+    max-width: 1000px;
+    overflow: scroll;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#description {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+form {
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    box-shadow: 0.2rem 0.1rem 0.5rem grey;
+}
+
+form > h2 {
+    flex-basis: 100%;
+    font-size: 1.2rem;
+}
+
+label {
+    flex: 0 1 40%;
+
+    margin-top: 1rem;
+
+    font-size: 0.8rem;
+    color: #555;
+}
+
+input {
+    display: block;
+    padding-left: 0.5rem;
+    margin-top: 0.1rem;
+
+    font-size: 1rem;
+    line-height: 2rem;
+
+    border: 1px solid #555;
+    border-radius: 0.2rem;
+    outline: none;
+}
+
+input::placeholder {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+input[type="password"]:invalid {
+    border-color: red;
+}
+
+button {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+section {
+    margin: 0 2rem;
+}
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 90%;
+    }
+
+    body {
+        flex-direction: column;
+    }
+
+    input {
+        display: inline;
+    }
+
+    main {
+        overflow: auto;
+    }
+
+    aside {
+        height: 20%;
+    }
+}
